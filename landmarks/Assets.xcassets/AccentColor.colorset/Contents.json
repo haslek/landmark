@@ -1,6 +1,11 @@
 {
   "colors" : [
     {
+      "color" : {
+        "platform" : "universal",
+        "reference" : "systemMintColor"
+      },
+      "filename" : "change_y_d.jpeg",
       "idiom" : "universal"
     }
   ],
