@@ -26,5 +26,6 @@ struct LandmarksList: View {
 struct LandmarksList_Previews: PreviewProvider {
     static var previews: some View {
         LandmarksList()
+//            .previewDevice(PreviewDevice(raw))
     }
 }
