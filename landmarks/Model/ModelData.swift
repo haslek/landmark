@@ -9,7 +9,8 @@ import Foundation
 
 var landmarks: [Landmark] = load("landmarkData.json")
 
-func load<T: Decodable>(_ filename: String )->T{
+func load<T: Decodable>(_ filename: String )-> T {
+    
     let data: Data
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
@@ -22,6 +23,7 @@ func load<T: Decodable>(_ filename: String )->T{
     } catch{
         fatalError("Couldn't find \(filename) from main bundle: \n\(error)")
     }
+    
     
     do{
         let decoder = JSONDecoder()
